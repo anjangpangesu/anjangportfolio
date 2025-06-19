@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="src/style/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#2563eb",
+                        secondary: "#1e40af",
+                        light: "#f8fafc",
+                        dark: "#0f172a",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-sans bg-light text-dark">
+    <div id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white bg-opacity-80 bg-blur">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="text-2xl font-bold text-primary">Portfolio<span class="text-dark">.</span></a>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="#hero" class="font-medium nav-link" data-section="hero">Home</a>
+                    <a href="#about" class="font-medium nav-link" data-section="about">About</a>
+                    <a href="#projects" class="font-medium nav-link" data-section="projects">Projects</a>
+                    <a href="#contact" class="font-medium nav-link" data-section="contact">Contact</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="#hero" class="font-medium nav-link" data-section="hero">Home</a>
+                    <a href="#about" class="font-medium nav-link" data-section="about">About</a>
+                    <a href="#projects" class="font-medium nav-link" data-section="projects">Projects</a>
+                    <a href="#contact" class="font-medium nav-link" data-section="contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hero" class="min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-indigo-50 pt-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                        Hi, I'm <span class="text-primary">Your Name</span>
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl font-medium text-gray-600 mb-6">
+                        Professional Title
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                        I create meaningful digital experiences through design and
+                        development. Passionate about solving problems and crafting
+                        intuitive interfaces.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact"
+                            class="px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-secondary transition-colors shadow-lg hover:shadow-xl">
+                            Get in Touch
+                        </a>
+                        <a href="#projects"
+                            class="px-6 py-3 bg-white text-primary font-medium rounded-lg border border-primary hover:bg-gray-50 transition-colors">
+                            View My Work
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div
+                            class="w-64 h-64 md:w-80 md:h-80 bg-primary rounded-full absolute -top-6 -right-6 opacity-10 animate-float">
+                        </div>
+                        <div
+                            class="w-64 h-64 md:w-80 md:h-80 bg-white rounded-full border-8 border-white shadow-xl overflow-hidden relative z-10">
+                            <svg class="w-full h-full text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 14.25c4.142 0 7.5-3.358 7.5-7.5S16.142-.75 12-.75 4.5 2.608 4.5 6.75s3.358 7.5 7.5 7.5zm0 1.5C7.313 15.75 0 18.188 0 23.25v.75h24v-.75c0-5.062-7.313-7.5-12-7.5z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-2">About Me</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <div class="relative">
+                        <div class="w-full h-80 bg-gray-100 rounded-lg"></div>
+                        <div
+                            class="absolute -bottom-6 -right-6 w-64 h-64 border-8 border-white rounded-lg shadow-lg bg-primary bg-opacity-10">
+                            <div class="w-full h-full flex items-center justify-center">
+                                <i class="fas fa-code text-6xl text-primary opacity-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-12 md:mt-0">
+                    <h3 class="text-2xl font-bold mb-4">Who I Am</h3>
+                    <p class="text-gray-600 mb-6">
+                        I'm a passionate [Your Profession] with [X] years of experience
+                        creating [what you create]. My journey began with [brief
+                        background] and has evolved into a career focused on [your focus].
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        I believe in [your philosophy or approach to work]. My goal is to
+                        [what you aim to achieve with your work]. When I'm not working,
+                        you can find me [your hobbies or interests].
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-bold mb-2">Name:</h4>
+                            <p class="text-gray-600">Your Name</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">Email:</h4>
+                            <p class="text-gray-600">anjangpangestu2304@gmail.com</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">Location:</h4>
+                            <p class="text-gray-600">Your City, Country</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">Availability:</h4>
+                            <p class="text-gray-600">Available for freelance</p>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="your-cv.pdf" download
+                            class="px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-secondary transition-colors shadow-lg hover:shadow-xl inline-flex items-center">
+                            <i class="fas fa-download mr-2"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-2">My Skills</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Here are the technologies and tools I specialize in. I'm constantly
+                    learning and expanding my skillset.
+                </p>
+            </div>
+
+            <div id="skills-container" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            </div>
+        </div>
+    </div>
+
+    <div class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-2">Education</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <div id="education-container">
+                </div>
+
+                <div class="mt-12">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <span
+                            class="w-10 h-10 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-certificate text-primary"></i>
+                        </span>
+                        Certifications
+                    </h3>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <ul id="certifications-container" class="space-y-4">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-2">Work Experience</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+
+            <div id="experience-container" class="max-w-3xl mx-auto">
+            </div>
+        </div>
+    </div>
+
+    <div class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-2">Organizational Experience</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Leadership roles and community involvement that have shaped my
+                    professional development.
+                </p>
+            </div>
+
+            <div id="organizations-container" class="max-w-3xl mx-auto">
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-2">My Projects</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Here's a selection of my recent work. Each project represents a
+                    unique challenge and solution.
+                </p>
+            </div>
+
+            <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-2">Get In Touch</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Have a project in mind or want to discuss potential opportunities?
+                    Feel free to reach out!
+                </p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
+                        <form id="contact-form" action="" method="GET" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                    placeholder="Your Name" required />
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                    placeholder="Your Email" required />
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                    placeholder="Subject" required />
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                    placeholder="Your Message" required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit"
+                                    class="w-full px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-secondary transition-colors shadow-lg hover:shadow-xl">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div
+                                    class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Email</h4>
+                                    <p class="text-gray-600">anjangpangestu2304@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div
+                                    class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Phone</h4>
+                                    <p class="text-gray-600">+1 (123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div
+                                    class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Location</h4>
+                                    <p class="text-gray-600">Your City, Country</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Follow Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#"
+                                class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#"
+                                class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#"
+                                class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                            <a href="#"
+                                class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center items-center mb-8">
+                <a href="#" class="text-2xl font-bold text-white">Portfolio<span class="text-primary">.</span></a>
+            </div>
+            <hr class="border-gray-800 my-8" />
+            <div class="text-center">
+                <p class="text-gray-400">
+                    &copy; <span id="current-year"></span> Your Name. All rights
+                    reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button id="back-to-top"
+        class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-secondary">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div id="gallery-modals-container">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="src/script/main.js"></script>
+</body>
+
+</html>

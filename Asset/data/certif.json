@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Certification Name 1",
+    "issuer": "Issuing Organization A",
+    "year": "2022"
+  },
+  {
+    "name": "Certification Name 2",
+    "issuer": "Issuing Organization B",
+    "year": "2023"
+  },
+  {
+    "name": "Certification Name 3",
+    "issuer": "Issuing Organization C",
+    "year": "2024"
+  }
+]

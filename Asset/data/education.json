@@ -1,0 +1,16 @@
+[
+  {
+    "degree": "Master's Degree",
+    "field": "Computer Science",
+    "institution": "University Name",
+    "period": "2014 - 2016",
+    "description": "Computer Science or your field of study. Include relevant coursework, projects, or thesis if applicable."
+  },
+  {
+    "degree": "Bachelor's Degree",
+    "field": "Computer Science",
+    "institution": "University Name",
+    "period": "2010 - 2014",
+    "description": "Computer Science or your field of study. Include relevant coursework, projects, or achievements."
+  }
+]

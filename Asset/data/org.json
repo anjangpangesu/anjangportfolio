@@ -1,0 +1,27 @@
+[
+  {
+    "role": "Vice President",
+    "organization": "Organization Name",
+    "period": "2019 - 2021",
+    "description": "Led a team of 15 members in organizing community events and workshops. Managed budget planning and execution for multiple projects.",
+    "skills": ["Leadership", "Event Management", "Budget Planning"]
+  },
+  {
+    "role": "Committee Member",
+    "organization": "Student Association",
+    "period": "2017 - 2019",
+    "description": "Coordinated technical workshops and hackathons for students. Developed partnerships with industry professionals for mentorship programs.",
+    "skills": [
+      "Event Coordination",
+      "Partnership Development",
+      "Technical Training"
+    ]
+  },
+  {
+    "role": "Volunteer",
+    "organization": "Community Outreach Program",
+    "period": "2016 - 2017",
+    "description": "Taught basic computer skills to underprivileged youth. Organized fundraising events to support educational initiatives.",
+    "skills": ["Teaching", "Fundraising", "Community Service"]
+  }
+]

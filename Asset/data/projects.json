@@ -1,0 +1,134 @@
+[
+  {
+    "id": "project1",
+    "title": "Web Project",
+    "category": "Web Application",
+    "description": "A responsive web application with user authentication, dashboard, and data visualization.",
+    "detailedDescription": "A full-stack web application built with React and Node.js.",
+    "technologies": ["React", "Node.js", "MongoDB"],
+    "icon": "fas fa-laptop-code",
+    "links": {
+      "live": "https://example.com/project1",
+      "code": "https://github.com/yourusername/project1"
+    },
+    "type": "external"
+  },
+  {
+    "id": "project2",
+    "title": "Mobile App Design",
+    "category": "UI/UX Design",
+    "description": "A comprehensive mobile app design project with wireframes, mockups, and interactive prototypes.",
+    "detailedDescription": "A mobile app design project focusing on user experience and accessibility.",
+    "technologies": ["UI/UX", "Figma", "Prototyping"],
+    "icon": "fas fa-paint-brush",
+    "links": {
+      "dribbble": "https://dribbble.com/yourusername"
+    },
+    "type": "gallery",
+    "gallery": [
+      {
+        "icon": "fas fa-mobile-alt",
+        "title": "App Home Screen",
+        "description": "Main dashboard with activity summary and quick actions"
+      },
+      {
+        "icon": "fas fa-user-circle",
+        "title": "User Profile",
+        "description": "User profile with settings and preferences"
+      },
+      {
+        "icon": "fas fa-chart-bar",
+        "title": "Analytics Screen",
+        "description": "Detailed analytics with interactive charts"
+      }
+    ]
+  },
+  {
+    "id": "project3",
+    "title": "E-commerce Website",
+    "category": "E-commerce Platform",
+    "description": "A complete e-commerce solution with product management, shopping cart, and payment integration.",
+    "detailedDescription": "A fully functional e-commerce website with product catalog and checkout.",
+    "technologies": ["PHP", "MySQL", "Bootstrap"],
+    "icon": "fas fa-shopping-cart",
+    "links": {
+      "live": "https://example.com/project3",
+      "code": "https://github.com/yourusername/project3"
+    },
+    "type": "external"
+  },
+  {
+    "id": "project4",
+    "title": "Brand Identity Design",
+    "category": "Brand Identity",
+    "description": "A comprehensive brand identity project for a startup company, including logo design and brand guidelines.",
+    "detailedDescription": "A complete brand identity design including logo, color palette, and guidelines.",
+    "technologies": ["Branding", "Illustrator", "Photoshop"],
+    "icon": "fas fa-desktop",
+    "links": {
+      "behance": "https://behance.net/yourusername"
+    },
+    "type": "gallery",
+    "gallery": [
+      {
+        "icon": "fas fa-image",
+        "title": "Logo Design",
+        "description": "Primary logo with variations"
+      },
+      {
+        "icon": "fas fa-palette",
+        "title": "Color Palette",
+        "description": "Brand color scheme with primary and secondary colors"
+      },
+      {
+        "icon": "fas fa-font",
+        "title": "Typography",
+        "description": "Font selection and typographic guidelines"
+      }
+    ]
+  },
+  {
+    "id": "project5",
+    "title": "Analytics Dashboard",
+    "category": "Data Dashboard",
+    "description": "An interactive data visualization dashboard with real-time updates and customizable views.",
+    "detailedDescription": "An interactive data visualization dashboard with real-time updates.",
+    "technologies": ["D3.js", "Vue.js", "Firebase"],
+    "icon": "fas fa-chart-line",
+    "links": {
+      "live": "https://example.com/project5",
+      "code": "https://github.com/yourusername/project5"
+    },
+    "type": "external"
+  },
+  {
+    "id": "project6",
+    "title": "Fitness App UI",
+    "category": "Mobile App UI",
+    "description": "A fitness tracking mobile app UI design with activity monitoring, goal setting, and social features.",
+    "detailedDescription": "A fitness tracking app UI design with a focus on user experience.",
+    "technologies": ["UI/UX", "Adobe XD", "Prototyping"],
+    "icon": "fas fa-mobile-alt",
+    "links": {
+      "dribbble": "https://dribbble.com/yourusername"
+    },
+    "type": "gallery",
+    "gallery": [
+      {
+        "icon": "fas fa-running",
+        "title": "Activity Tracking",
+        "description": "Daily activity monitoring with progress visualization"
+      },
+      {
+        "icon": "fas fa-heartbeat",
+        "title": "Health Metrics",
+        "description": "Health data visualization and insights"
+      },
+      {
+        "icon": "fas fa-trophy",
+        "title": "Achievements",
+        "description": "Gamified achievements and rewards system"
+      }
+    ]
+  }
+]
