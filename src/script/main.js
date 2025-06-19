@@ -239,20 +239,6 @@ function populateProjects() {
                 </button>
             `;
 
-            if (project.links.dribbble) {
-                linksHTML += `
-                    <a href="${project.links.dribbble}" target="_blank" class="px-4 py-2 border border-white text-white rounded-lg hover:bg-white hover:text-primary transition-colors">
-                        <i class="fab fa-dribbble mr-1"></i> Dribbble
-                    </a>
-                `;
-            } else if (project.links.behance) {
-                linksHTML += `
-                    <a href="${project.links.behance}" target="_blank" class="px-4 py-2 border border-white text-white rounded-lg hover:bg-white hover:text-primary transition-colors">
-                        <i class="fab fa-behance mr-1"></i> Behance
-                    </a>
-                `;
-            }
-
             // Create gallery modal with improved responsive design
             if (project.gallery && project.gallery.length > 0) {
                 const modalElement = document.createElement("div");

@@ -21,9 +21,6 @@
     "detailedDescription": "A mobile app design project focusing on user experience and accessibility.",
     "technologies": ["UI/UX", "Figma", "Prototyping"],
     "icon": "fas fa-paint-brush",
-    "links": {
-      "dribbble": "https://dribbble.com/yourusername"
-    },
     "type": "gallery",
     "gallery": [
       {
@@ -65,9 +62,6 @@
     "detailedDescription": "A complete brand identity design including logo, color palette, and guidelines.",
     "technologies": ["Branding", "Illustrator", "Photoshop"],
     "icon": "fas fa-desktop",
-    "links": {
-      "behance": "https://behance.net/yourusername"
-    },
     "type": "gallery",
     "gallery": [
       {
@@ -109,9 +103,6 @@
     "detailedDescription": "A fitness tracking app UI design with a focus on user experience.",
     "technologies": ["UI/UX", "Adobe XD", "Prototyping"],
     "icon": "fas fa-mobile-alt",
-    "links": {
-      "dribbble": "https://dribbble.com/yourusername"
-    },
     "type": "gallery",
     "gallery": [
       {
