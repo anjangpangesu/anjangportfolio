@@ -1,20 +1,14 @@
 [
   {
-    "title": "Senior Developer",
-    "company": "Company Name",
-    "period": "2021 - Present",
-    "description": "Description of your role, responsibilities, and key achievements. Highlight projects you worked on and the impact you made."
+    "title": "Cloud Computing Cohort Member",
+    "company": "Bangkit Academy 2023 Batch 1 (Kampus Merdeka - Studi Independent)",
+    "period": "February 2023 - July 2023",
+    "description": "Participated in a six-month online learning program focused on Cloud Computing. Collaborated in a final team project with six members across cloud computing, machine learning, and mobile development roles. Contributed to the development of the 'e-Laborate' application as a cloud developer."
   },
   {
-    "title": "Web Developer",
-    "company": "Company Name",
-    "period": "2018 - 2021",
-    "description": "Description of your role, responsibilities, and key achievements. Highlight projects you worked on and the impact you made."
-  },
-  {
-    "title": "Junior Developer",
-    "company": "Company Name",
-    "period": "2016 - 2018",
-    "description": "Description of your role, responsibilities, and key achievements. Highlight projects you worked on and the impact you made."
+    "title": "Intern - Diaphragm Department",
+    "company": "PT. Toa Galva Industries",
+    "period": "November 2018 - February 2019",
+    "description": "Performed tasks such as cutting diaphragm leaves to meet daily targets, sanding and cutting bobbins, and attaching eyelets to packing. Assisted in machine maintenance and repairs to ensure proper functionality and efficiency in the diaphragm production process."
   }
 ]

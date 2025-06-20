@@ -1,27 +1,32 @@
 [
   {
-    "role": "Vice President",
-    "organization": "Organization Name",
-    "period": "2019 - 2021",
-    "description": "Led a team of 15 members in organizing community events and workshops. Managed budget planning and execution for multiple projects.",
-    "skills": ["Leadership", "Event Management", "Budget Planning"]
-  },
-  {
-    "role": "Committee Member",
-    "organization": "Student Association",
-    "period": "2017 - 2019",
-    "description": "Coordinated technical workshops and hackathons for students. Developed partnerships with industry professionals for mentorship programs.",
+    "role": "Member of Interest and Talent Division",
+    "organization": "Student Executive Board Bekasi Campus Esa Unggul University",
+    "period": "May 2022 - March 2023",
+    "description": "Created and organized sports events and UEU KHI CUP with the team. Managed student organizations (UKM) on Bekasi Campus.",
     "skills": [
-      "Event Coordination",
-      "Partnership Development",
-      "Technical Training"
+      "Event Organization",
+      "Team Collaboration",
+      "Community Engagement"
     ]
   },
   {
-    "role": "Volunteer",
-    "organization": "Community Outreach Program",
-    "period": "2016 - 2017",
-    "description": "Taught basic computer skills to underprivileged youth. Organized fundraising events to support educational initiatives.",
-    "skills": ["Teaching", "Fundraising", "Community Service"]
+    "role": "Core Member",
+    "organization": "UEU Robotics Community",
+    "period": "July 2021 - July 2023",
+    "description": "Involved in mechanical and electrical parts of robots. Competed in Indonesian Robot Contest (KRI). Led user design team for GEMASTIK 2023.",
+    "skills": [
+      "Robotics",
+      "Team Leadership",
+      "Mechanical Design",
+      "User Interface Design"
+    ]
+  },
+  {
+    "role": "Team Member",
+    "organization": "Robotics Extracurricular SMKN 04 Jakarta",
+    "period": "August 2017 - February 2020",
+    "description": "Participated in robotics competitions such as Line Follower. Completed various assigned projects during extracurricular sessions.",
+    "skills": ["Teamwork", "Electronics", "Problem Solving"]
   }
 ]

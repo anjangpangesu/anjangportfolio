@@ -1,17 +1,17 @@
 [
   {
-    "name": "Certification Name 1",
-    "issuer": "Issuing Organization A",
+    "name": "Cloud Developing Learning",
+    "issuer": "Digital Talent Scholarship",
     "year": "2022"
   },
   {
-    "name": "Certification Name 2",
-    "issuer": "Issuing Organization B",
+    "name": "UI / UX Design Mastery",
+    "issuer": "Skilvul",
     "year": "2023"
   },
   {
-    "name": "Certification Name 3",
-    "issuer": "Issuing Organization C",
+    "name": "Learn Data Visualization Basics",
+    "issuer": "Dicoding Indonesia",
     "year": "2024"
   }
 ]

@@ -1,22 +1,22 @@
 [
   {
-    "name": "HTML5",
-    "icon": "fab fa-html5",
-    "proficiency": 95
+    "name": "Figma",
+    "icon": "fab fa-figma",
+    "proficiency": 85
   },
   {
-    "name": "CSS3",
+    "name": "HTML5",
+    "icon": "fab fa-html5",
+    "proficiency": 80
+  },
+  {
+    "name": "Css",
     "icon": "fab fa-css3-alt",
-    "proficiency": 90
+    "proficiency": 80
   },
   {
     "name": "JavaScript",
     "icon": "fab fa-js",
-    "proficiency": 85
-  },
-  {
-    "name": "React",
-    "icon": "fab fa-react",
-    "proficiency": 80
+    "proficiency": 75
   }
 ]

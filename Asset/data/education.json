@@ -1,16 +1,16 @@
 [
   {
-    "degree": "Master's Degree",
-    "field": "Computer Science",
-    "institution": "University Name",
-    "period": "2014 - 2016",
-    "description": "Computer Science or your field of study. Include relevant coursework, projects, or thesis if applicable."
-  },
-  {
     "degree": "Bachelor's Degree",
     "field": "Computer Science",
-    "institution": "University Name",
-    "period": "2010 - 2014",
-    "description": "Computer Science or your field of study. Include relevant coursework, projects, or achievements."
+    "institution": "Esa Unggul University",
+    "period": "September 2020 - August 2024",
+    "description": "Relevant subjects include Algorithms, Software Engineering, Software Development, Internet of Things, and Mobile Application Design. Demonstrated discipline in completing assignments and quizzes before deadlines, and consistently attended classes on time."
+  },
+  {
+    "degree": "Vocational High School",
+    "field": "Industrial Electronics Engineering",
+    "institution": "SMKN 04 Jakarta",
+    "period": "July 2017 - May 2020",
+    "description": "Relevant subjects include Digital Simulation and Communication, Basic Expertise Program, and Expertise Competency. Achievements include 1st Runner-up Award in the Electronics field at the 2020 DKI Jakarta Provincial Level Student Competency Competition (LKS), and participation in the 2018 Student Company Competition at the DKI Jakarta Provincial Level."
   }
 ]

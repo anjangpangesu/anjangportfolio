@@ -1,124 +1,193 @@
 [
   {
     "id": "project1",
-    "title": "Web Project",
-    "category": "Web Application",
-    "description": "A responsive web application with user authentication, dashboard, and data visualization.",
-    "detailedDescription": "A full-stack web application built with React and Node.js.",
-    "technologies": ["React", "Node.js", "MongoDB"],
-    "icon": "fas fa-laptop-code",
+    "title": "e-Laborate Application",
+    "category": "Mobile & Cloud Application",
+    "description": "An educational platform developed as the final project of Bangkit Academy.",
+    "detailedDescription": "Built by a team of six members from three learning paths—Cloud Computing, Machine Learning, and Mobile Development. Backend developed with Node.js and Google Cloud services.",
+    "technologies": ["Node.js", "Google Cloud Firestore", "Google Cloud Run", "Google App Engine"],
+    "icon": "fas fa-cloud",
+    "type": "external",
     "links": {
-      "live": "https://example.com/project1",
-      "code": "https://github.com/yourusername/project1"
-    },
-    "type": "external"
+      "live": "",
+      "code": ""
+    }
   },
   {
     "id": "project2",
-    "title": "Mobile App Design",
-    "category": "UI/UX Design",
-    "description": "A comprehensive mobile app design project with wireframes, mockups, and interactive prototypes.",
-    "detailedDescription": "A mobile app design project focusing on user experience and accessibility.",
-    "technologies": ["UI/UX", "Figma", "Prototyping"],
-    "icon": "fas fa-paint-brush",
+    "title": "IoT-Based Safe with Fingerprint Sensor",
+    "category": "IoT Project",
+    "description": "A safe system using fingerprint, keypad, and GPS tracker.",
+    "detailedDescription": "Designed with Altium Designer for schematic and PCB, programmed with Arduino, and assembled using acrylic casing.",
+    "technologies": ["Arduino", "Fritzing", "Altium Designer", "GPS", "Fingerprint Sensor"],
+    "icon": "fas fa-lock",
     "type": "gallery",
     "gallery": [
       {
-        "icon": "fas fa-mobile-alt",
-        "title": "App Home Screen",
-        "description": "Main dashboard with activity summary and quick actions"
+        "icon": "fas fa-project-diagram",
+        "title": "System Flowchart",
+        "description": "Visual flow of system logic and operation",
+        "image": "https://source.unsplash.com/400x300/?circuit"
       },
       {
-        "icon": "fas fa-user-circle",
-        "title": "User Profile",
-        "description": "User profile with settings and preferences"
+        "icon": "fas fa-microchip",
+        "title": "PCB Design",
+        "description": "Screenshot of PCB layout using Altium",
+        "image": "https://source.unsplash.com/400x300/?pcb"
       },
       {
-        "icon": "fas fa-chart-bar",
-        "title": "Analytics Screen",
-        "description": "Detailed analytics with interactive charts"
+        "icon": "fas fa-lock",
+        "title": "Prototype Build",
+        "description": "Final acrylic-encased safe with components installed",
+        "image": "https://source.unsplash.com/400x300/?iot"
       }
     ]
   },
   {
     "id": "project3",
-    "title": "E-commerce Website",
-    "category": "E-commerce Platform",
-    "description": "A complete e-commerce solution with product management, shopping cart, and payment integration.",
-    "detailedDescription": "A fully functional e-commerce website with product catalog and checkout.",
-    "technologies": ["PHP", "MySQL", "Bootstrap"],
-    "icon": "fas fa-shopping-cart",
-    "links": {
-      "live": "https://example.com/project3",
-      "code": "https://github.com/yourusername/project3"
-    },
-    "type": "external"
-  },
-  {
-    "id": "project4",
-    "title": "Brand Identity Design",
-    "category": "Brand Identity",
-    "description": "A comprehensive brand identity project for a startup company, including logo design and brand guidelines.",
-    "detailedDescription": "A complete brand identity design including logo, color palette, and guidelines.",
-    "technologies": ["Branding", "Illustrator", "Photoshop"],
-    "icon": "fas fa-desktop",
+    "title": "Final Thesis - IoT Safe with Telegram Alert",
+    "category": "IoT & Embedded System",
+    "description": "Safe system that sends alerts via Telegram using ESP32-CAM.",
+    "detailedDescription": "Includes backup battery power and remote notification functionality using Telegram bot integration.",
+    "technologies": ["ESP32-CAM", "Arduino", "Telegram API"],
+    "icon": "fas fa-shield-alt",
     "type": "gallery",
     "gallery": [
       {
-        "icon": "fas fa-image",
-        "title": "Logo Design",
-        "description": "Primary logo with variations"
+        "icon": "fas fa-bolt",
+        "title": "Battery Backup System",
+        "description": "Backup battery integration diagram",
+        "image": "https://source.unsplash.com/400x300/?battery"
       },
       {
-        "icon": "fas fa-palette",
-        "title": "Color Palette",
-        "description": "Brand color scheme with primary and secondary colors"
+        "icon": "fas fa-camera",
+        "title": "ESP32-CAM Module",
+        "description": "Microcontroller setup with camera and bot alert",
+        "image": "https://source.unsplash.com/400x300/?esp32"
       },
       {
-        "icon": "fas fa-font",
-        "title": "Typography",
-        "description": "Font selection and typographic guidelines"
+        "icon": "fas fa-robot",
+        "title": "Telegram Notification Feature",
+        "description": "Alert system linked to Telegram bot",
+        "image": "https://source.unsplash.com/400x300/?telegram"
+      }
+    ]
+  },
+  {
+    "id": "project4",
+    "title": "Prana CBT Website Design",
+    "category": "UI/UX Design",
+    "description": "Prototype design for CBT (Computer-Based Test) platform for teachers and students.",
+    "detailedDescription": "Designed interfaces like homepage, login, dashboard, and more using Figma.",
+    "technologies": ["Figma", "UI/UX", "Prototyping"],
+    "icon": "fas fa-pencil-ruler",
+    "type": "gallery",
+    "gallery": [
+      {
+        "icon": "fas fa-home",
+        "title": "Homepage Design",
+        "description": "Landing page with CTA for teachers and students",
+        "image": "https://source.unsplash.com/400x300/?website"
+      },
+      {
+        "icon": "fas fa-user-lock",
+        "title": "Login Interface",
+        "description": "Secure login form design",
+        "image": "https://source.unsplash.com/400x300/?login"
+      },
+      {
+        "icon": "fas fa-chalkboard-teacher",
+        "title": "Dashboard View",
+        "description": "Main interface for managing tests and viewing results",
+        "image": "https://source.unsplash.com/400x300/?dashboard"
       }
     ]
   },
   {
     "id": "project5",
-    "title": "Analytics Dashboard",
-    "category": "Data Dashboard",
-    "description": "An interactive data visualization dashboard with real-time updates and customizable views.",
-    "detailedDescription": "An interactive data visualization dashboard with real-time updates.",
-    "technologies": ["D3.js", "Vue.js", "Firebase"],
-    "icon": "fas fa-chart-line",
+    "title": "Web-based Discussion Room Borrowing",
+    "category": "Web Application",
+    "description": "Web platform for booking discussion rooms.",
+    "detailedDescription": "Built architecture diagrams and used black box testing to validate system functions. Managed tasks via Notion.",
+    "technologies": ["Notion", "Black Box Testing", "HTML", "CSS", "JavaScript"],
+    "icon": "fas fa-comments",
+    "type": "external",
     "links": {
-      "live": "https://example.com/project5",
-      "code": "https://github.com/yourusername/project5"
-    },
-    "type": "external"
+      "live": "",
+      "code": ""
+    }
   },
   {
     "id": "project6",
-    "title": "Fitness App UI",
-    "category": "Mobile App UI",
-    "description": "A fitness tracking mobile app UI design with activity monitoring, goal setting, and social features.",
-    "detailedDescription": "A fitness tracking app UI design with a focus on user experience.",
-    "technologies": ["UI/UX", "Adobe XD", "Prototyping"],
-    "icon": "fas fa-mobile-alt",
+    "title": "E-Commerce Website",
+    "category": "Web Application",
+    "description": "Web-based e-commerce system for product catalog and checkout.",
+    "detailedDescription": "Includes planning diagrams, class and sequence diagrams, and testing using black box methodology.",
+    "technologies": ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+    "icon": "fas fa-shopping-cart",
+    "type": "external",
+    "links": {
+      "live": "",
+      "code": ""
+    }
+  },
+  {
+    "id": "project7",
+    "title": "Komunitas Cosplay Website Design",
+    "category": "UI/UX Design",
+    "description": "Website interface design for a cosplay community platform.",
+    "detailedDescription": "Designed homepage, account registration, and login pages using Figma.",
+    "technologies": ["Figma", "UI/UX", "Prototyping"],
+    "icon": "fas fa-user-ninja",
     "type": "gallery",
     "gallery": [
       {
-        "icon": "fas fa-running",
-        "title": "Activity Tracking",
-        "description": "Daily activity monitoring with progress visualization"
+        "icon": "fas fa-home",
+        "title": "Homepage",
+        "description": "Hero section with cosplay event highlights",
+        "image": "https://source.unsplash.com/400x300/?cosplay"
       },
       {
-        "icon": "fas fa-heartbeat",
-        "title": "Health Metrics",
-        "description": "Health data visualization and insights"
+        "icon": "fas fa-user-plus",
+        "title": "Registration Page",
+        "description": "Sign-up page for new community members",
+        "image": "https://source.unsplash.com/400x300/?form"
       },
       {
-        "icon": "fas fa-trophy",
-        "title": "Achievements",
-        "description": "Gamified achievements and rewards system"
+        "icon": "fas fa-sign-in-alt",
+        "title": "Login Page",
+        "description": "Access page for existing members",
+        "image": "https://source.unsplash.com/400x300/?login"
+      }
+    ]
+  },
+  {
+    "id": "project8",
+    "title": "e-IANC Website Homepage Design",
+    "category": "UI/UX Design",
+    "description": "Homepage interface design for e-IANC website.",
+    "detailedDescription": "Prototyped and documented homepage interface using Figma.",
+    "technologies": ["Figma", "UI/UX", "Documentation"],
+    "icon": "fas fa-home",
+    "type": "gallery",
+    "gallery": [
+      {
+        "icon": "fas fa-desktop",
+        "title": "Homepage Layout",
+        "description": "Hero layout and information sections",
+        "image": "https://source.unsplash.com/400x300/?layout"
+      },
+      {
+        "icon": "fas fa-cogs",
+        "title": "Features Section",
+        "description": "Showcasing key features of e-IANC",
+        "image": "https://source.unsplash.com/400x300/?features"
+      },
+      {
+        "icon": "fas fa-file-alt",
+        "title": "Design Documentation",
+        "description": "UX notes and explanation of UI decisions",
+        "image": "https://source.unsplash.com/400x300/?documentation"
       }
     ]
   }
