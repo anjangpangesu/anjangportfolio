@@ -7,11 +7,10 @@
     "detailedDescription": "Built by a team of six members from three learning paths—Cloud Computing, Machine Learning, and Mobile Development. Backend developed with Node.js and Google Cloud services.",
     "technologies": ["Node.js", "Google Cloud Firestore", "Google Cloud Run", "Google App Engine"],
     "icon": "fas fa-cloud",
-    "type": "external",
     "links": {
-      "live": "",
-      "code": ""
-    }
+      "code": "https://github.com/anjangpangesu/E-LABorate"
+    },
+    "type": "external"
   },
   {
     "id": "project2",
@@ -111,11 +110,10 @@
     "detailedDescription": "Built architecture diagrams and used black box testing to validate system functions. Managed tasks via Notion.",
     "technologies": ["Notion", "Black Box Testing", "HTML", "CSS", "JavaScript"],
     "icon": "fas fa-comments",
-    "type": "external",
     "links": {
-      "live": "",
-      "code": ""
-    }
+      "live": "https://pinjamruangdiskusi.tech/"
+    },
+    "type": "external"
   },
   {
     "id": "project6",
@@ -125,11 +123,11 @@
     "detailedDescription": "Includes planning diagrams, class and sequence diagrams, and testing using black box methodology.",
     "technologies": ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
     "icon": "fas fa-shopping-cart",
-    "type": "external",
     "links": {
-      "live": "",
-      "code": ""
-    }
+      "live": "https://www.bintangutama.site/"
+    },
+    "type": "external"
+    
   },
   {
     "id": "project7",

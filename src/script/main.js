@@ -224,14 +224,28 @@ function populateProjects() {
 
         let linksHTML = "";
         if (project.type === "external") {
-            linksHTML = `
-                <a href="${project.links.live}" target="_blank" class="px-4 py-2 bg-white text-primary rounded-lg hover:bg-gray-100 transition-colors">
-                    <i class="fas fa-external-link-alt mr-1"></i> Visit Site
-                </a>
-                <a href="${project.links.code}" target="_blank" class="px-4 py-2 border border-white text-white rounded-lg hover:bg-white hover:text-primary transition-colors">
-                    <i class="fab fa-github mr-1"></i> Code
-                </a>
-            `;
+            if (project.links.live && project.links.code) {
+                linksHTML = `
+                    <a href="${project.links.live}" target="_blank" class="px-4 py-2 bg-white text-primary rounded-lg hover:bg-gray-100 transition-colors">
+                        <i class="fas fa-external-link-alt mr-1"></i> Visit Site
+                    </a>
+                    <a href="${project.links.code}" target="_blank" class="px-4 py-2 border border-white text-white rounded-lg hover:bg-white hover:text-primary transition-colors">
+                        <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                `;
+            } else if (project.links.live) {
+                linksHTML = `
+                    <a href="${project.links.live}" target="_blank" class="px-4 py-2 bg-white text-primary rounded-lg hover:bg-gray-100 transition-colors">
+                        <i class="fas fa-external-link-alt mr-1"></i> Visit Site
+                    </a>
+                `;
+            } else if (project.links.code) {
+                linksHTML = `
+                    <a href="${project.links.code}" target="_blank" class="px-4 py-2 bg-white text-primary rounded-lg hover:bg-gray-100 transition-colors">
+                        <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                `;
+            }
         } else if (project.type === "gallery") {
             linksHTML = `
                 <button onclick="openGallery('${project.id}')" class="px-4 py-2 bg-white text-primary rounded-lg hover:bg-gray-100 transition-colors">
