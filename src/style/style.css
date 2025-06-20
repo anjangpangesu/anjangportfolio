@@ -428,3 +428,57 @@ html {
     font-size: 0.8rem !important;
   }
 }
+
+/* Existing animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* New animations for About Me section */
+/* Existing animations */
+/* ... (keep your existing float, pulse-small, fade-in-out if you like them elsewhere) ... */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* New animations for About Me section icons */
+.animate-float-icon-1 {
+    animation: float-small-alt 3.5s ease-in-out infinite;
+}
+.animate-float-icon-2 {
+    animation: float-small-alt 3.8s ease-in-out infinite;
+    animation-delay: 0.5s; /* Stagger animation start */
+}
+.animate-float-icon-3 {
+    animation: float-small-alt 3.2s ease-in-out infinite;
+    animation-delay: 1s; /* Stagger animation start */
+}
+.animate-float-icon-4 {
+    animation: float-small-alt 3.6s ease-in-out infinite;
+    animation-delay: 0.7s; /* Stagger animation start */
+}
+
+.bg-blur {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.glassmorphism {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly transparent white */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+@keyframes float-small-alt {
+    0% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-5px) rotate(2deg); }
+    50% { transform: translateY(0px) rotate(0deg); }
+    75% { transform: translateY(-5px) rotate(-2deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
