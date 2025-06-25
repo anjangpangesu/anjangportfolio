@@ -667,32 +667,33 @@ function slidePrev(projectId) {
     }
 }
 
-// Handle Contact Form Submission for mailto:
+// Handle Contact Form Submission for WhatsApp
 const contactForm = document.getElementById("contact-form");
 
 if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
-        e.preventDefault(); // Mencegah pengiriman formulir HTML standar
+        e.preventDefault(); // Prevent default HTML form submission
 
         const name = document.getElementById("name").value;
         const email = document.getElementById("email").value;
         const subject = document.getElementById("subject").value;
         const message = document.getElementById("message").value;
 
-        // EncodeURI untuk memastikan spasi dan karakter khusus ditangani dengan benar
-        const recipientEmail = "anjangpangestu2304@gmail.com";
-        const mailSubject = encodeURIComponent(`Portfolio Contact: ${subject}`);
-        const mailBody = encodeURIComponent(
-            `Name: ${name}\n` + `Email: ${email}\n\n` + `Message:\n${message}`
+        // WhatsApp number (replace with your desired number)
+        const whatsappNumber = "6281213699618"; // Make sure to use the international format without '+'
+
+        // Construct the WhatsApp message URL
+        // Using a more structured message format for clarity
+        const whatsappMessage = encodeURIComponent(
+            `Halo Anjang Pangestu Selokaton,\n\nSaya ${name} (${email}) ingin menghubungi Anda mengenai "${subject}".\n\nDetail Pesan:\n${message}`
         );
 
-        // Buat link mailto:
-        const mailtoLink = `mailto:${recipientEmail}?subject=${mailSubject}&body=${mailBody}`;
+        const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
-        // Buka klien email default pengguna
-        window.location.href = mailtoLink;
+        // Open WhatsApp
+        window.open(whatsappLink, "_blank");
 
-        // Opsional: Reset formulir setelah dibuka (tergantung preferensi)
+        // Optional: Clear the form after submission (uncomment if desired)
         // contactForm.reset();
     });
 }
