@@ -7,16 +7,16 @@
   {
     "name": "HTML5",
     "icon": "fab fa-html5",
-    "proficiency": 80
+    "proficiency": 75
   },
   {
     "name": "Css",
     "icon": "fab fa-css3-alt",
-    "proficiency": 80
+    "proficiency": 75
   },
   {
     "name": "JavaScript",
     "icon": "fab fa-js",
-    "proficiency": 75
+    "proficiency": 70
   }
 ]

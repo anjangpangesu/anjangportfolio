@@ -253,6 +253,14 @@ function populateProjects() {
                 </button>
             `;
 
+            if (project.links.figma) {
+                linksHTML += `
+                    <a href="${project.links.figma}" target="_blank" class="px-4 py-2 border border-white text-white rounded-lg hover:bg-white hover:text-primary transition-colors">
+                        <i class="fab fa-figma mr-1"></i> Figma
+                    </a>
+                `;
+            }
+
             // Create gallery modal with improved responsive design
             if (project.gallery && project.gallery.length > 0) {
                 const modalElement = document.createElement("div");

@@ -20,27 +20,10 @@
     "detailedDescription": "Designed with Altium Designer for schematic and PCB, programmed with Arduino, and assembled using acrylic casing.",
     "technologies": ["Arduino", "Fritzing", "Altium Designer", "GPS", "Fingerprint Sensor"],
     "icon": "fas fa-lock",
-    "type": "gallery",
-    "gallery": [
-      {
-        "icon": "fas fa-project-diagram",
-        "title": "System Flowchart",
-        "description": "Visual flow of system logic and operation",
-        "image": "https://source.unsplash.com/400x300/?circuit"
-      },
-      {
-        "icon": "fas fa-microchip",
-        "title": "PCB Design",
-        "description": "Screenshot of PCB layout using Altium",
-        "image": "https://source.unsplash.com/400x300/?pcb"
-      },
-      {
-        "icon": "fas fa-lock",
-        "title": "Prototype Build",
-        "description": "Final acrylic-encased safe with components installed",
-        "image": "https://source.unsplash.com/400x300/?iot"
-      }
-    ]
+    "links": {
+      "code": "https://github.com/anjangpangesu/IoT-Projects-Based-Safe-with-Fingerprint-Sensor-GPS"
+    },
+    "type": "external"
   },
   {
     "id": "project3",
@@ -50,27 +33,11 @@
     "detailedDescription": "Includes backup battery power and remote notification functionality using Telegram bot integration.",
     "technologies": ["ESP32-CAM", "Arduino", "Telegram API"],
     "icon": "fas fa-shield-alt",
-    "type": "gallery",
-    "gallery": [
-      {
-        "icon": "fas fa-bolt",
-        "title": "Battery Backup System",
-        "description": "Backup battery integration diagram",
-        "image": "https://source.unsplash.com/400x300/?battery"
-      },
-      {
-        "icon": "fas fa-camera",
-        "title": "ESP32-CAM Module",
-        "description": "Microcontroller setup with camera and bot alert",
-        "image": "https://source.unsplash.com/400x300/?esp32"
-      },
-      {
-        "icon": "fas fa-robot",
-        "title": "Telegram Notification Feature",
-        "description": "Alert system linked to Telegram bot",
-        "image": "https://source.unsplash.com/400x300/?telegram"
-      }
-    ]
+    "links": {
+      "code": "https://github.com/anjangpangesu/Final-Thesis-IoT-Safe-with-Telegram-Alert",
+      "live": "https://ejournal.itn.ac.id/index.php/jati/article/view/10934"
+    },
+    "type": "external"
   },
   {
     "id": "project4",
@@ -80,6 +47,9 @@
     "detailedDescription": "Designed interfaces like homepage, login, dashboard, and more using Figma.",
     "technologies": ["Figma", "UI/UX", "Prototyping"],
     "icon": "fas fa-pencil-ruler",
+    "links": {
+      "figma": "https://dribbble.com/yourusername"
+    },
     "type": "gallery",
     "gallery": [
       {
@@ -137,6 +107,9 @@
     "detailedDescription": "Designed homepage, account registration, and login pages using Figma.",
     "technologies": ["Figma", "UI/UX", "Prototyping"],
     "icon": "fas fa-user-ninja",
+    "links": {
+      "figma": "https://dribbble.com/yourusername"
+    },
     "type": "gallery",
     "gallery": [
       {
@@ -167,6 +140,9 @@
     "detailedDescription": "Prototyped and documented homepage interface using Figma.",
     "technologies": ["Figma", "UI/UX", "Documentation"],
     "icon": "fas fa-home",
+    "links": {
+      "figma": "https://dribbble.com/yourusername"
+    },
     "type": "gallery",
     "gallery": [
       {
