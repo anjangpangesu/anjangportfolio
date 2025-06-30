@@ -1,12 +1,12 @@
 [
   {
     "id": "project1",
-    "title": "e-Laborate Application",
+    "title": "e-Laborate Mobile Application",
     "category": "Mobile & Cloud Application",
     "description": "An educational platform developed as the final project of Bangkit Academy.",
-    "detailedDescription": "Built by a team of six members from three learning paths—Cloud Computing, Machine Learning, and Mobile Development. Backend developed with Node.js and Google Cloud services.",
+    "detailedDescription": "Final team project at Bangkit Academy 2023 Batch 1. Backend developed with Node.js and Google Cloud services.",
     "technologies": ["Node.js", "Google Cloud Firestore", "Google Cloud Run", "Google App Engine"],
-    "icon": "fas fa-cloud",
+    "icon": "Asset/img/project1/e-laborate.png",
     "links": {
       "code": "https://github.com/anjangpangesu/E-LABorate"
     },
@@ -14,12 +14,12 @@
   },
   {
     "id": "project2",
-    "title": "IoT-Based Safe with Fingerprint Sensor",
+    "title": "IoT-Based Safe with Fingerprint Sensor & GPS",
     "category": "IoT Project",
     "description": "A safe system using fingerprint, keypad, and GPS tracker.",
     "detailedDescription": "Designed with Altium Designer for schematic and PCB, programmed with Arduino, and assembled using acrylic casing.",
     "technologies": ["Arduino", "Fritzing", "Altium Designer", "GPS", "Fingerprint Sensor"],
-    "icon": "fas fa-lock",
+    "icon": "Asset/img/project2&3/brankas-icon.png",
     "links": {
       "code": "https://github.com/anjangpangesu/IoT-Projects-Based-Safe-with-Fingerprint-Sensor-GPS"
     },
@@ -32,7 +32,7 @@
     "description": "Safe system that sends alerts via Telegram using ESP32-CAM.",
     "detailedDescription": "Includes backup battery power and remote notification functionality using Telegram bot integration.",
     "technologies": ["ESP32-CAM", "Arduino", "Telegram API"],
-    "icon": "fas fa-shield-alt",
+    "icon": "Asset/img/project2&3/brankas-icon.png",
     "links": {
       "code": "https://github.com/anjangpangesu/Final-Thesis-IoT-Safe-with-Telegram-Alert",
       "live": "https://ejournal.itn.ac.id/index.php/jati/article/view/10934"
@@ -46,20 +46,20 @@
     "description": "Prototype design for CBT (Computer-Based Test) platform for teachers and students.",
     "detailedDescription": "Designed interfaces like homepage, login, dashboard, and more using Figma.",
     "technologies": ["Figma", "UI/UX", "Prototyping"],
-    "icon": "Asset/img/project4/Dashboard - Student.png",
+    "icon": "Asset/img/project4/CBT.png",
     "links": {
-      "figma": "https://www.figma.com/design/od476vifFEN1jBzBv7MItg/Web---Prana-CBT?node-id=0-1&t=C6Hle0Ha9yKmfQZF-1"
+      "figma": "https://www.figma.com/design/od476vifFEN1jBzBv7MItg/Web---Prana-CBT?node-id=0-1&t=uvHl9l2cx06wHFfc-1"
     },
     "type": "gallery",
     "gallery": [
       {
+        "image": "Asset/img/project4/Homepage - Teacher.png"
+      },
+      {
+        "image": "Asset/img/project4/Sign In - Student.png"
+      },
+      {
         "image": "Asset/img/project4/Dashboard - Student.png"
-      },
-      {
-        "image": "https://source.unsplash.com/400x300/?login"
-      },
-      {
-        "image": "https://source.unsplash.com/400x300/?dashboard"
       }
     ]
   },
@@ -70,7 +70,7 @@
     "description": "Web platform for booking discussion rooms.",
     "detailedDescription": "Built architecture diagrams and used black box testing to validate system functions. Managed tasks via Notion.",
     "technologies": ["Notion", "Black Box Testing", "HTML", "CSS", "JavaScript"],
-    "icon": "fas fa-comments",
+    "icon": "Asset/img/project5/ruangan-icon.png",
     "links": {
       "live": "https://pinjamruangdiskusi.tech/"
     },
@@ -83,7 +83,7 @@
     "description": "Web-based e-commerce system for product catalog and checkout.",
     "detailedDescription": "Includes planning diagrams, class and sequence diagrams, and testing using black box methodology.",
     "technologies": ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
-    "icon": "fas fa-shopping-cart",
+    "icon": "Asset/img/project6/ecommerce-icon.png",
     "links": {
       "live": "https://www.bintangutama.site/"
     },
@@ -97,20 +97,20 @@
     "description": "Website interface design for a cosplay community platform.",
     "detailedDescription": "Designed homepage, account registration, and login pages using Figma.",
     "technologies": ["Figma", "UI/UX", "Prototyping"],
-    "icon": "fas fa-user-ninja",
+    "icon": "Asset/img/project7/cosplay.png",
     "links": {
-      "figma": "https://dribbble.com/yourusername"
+      "figma": "https://www.figma.com/design/Fixz5QtpU7cUYiWgEwRIlz/Web-Komunitas-Cosplayer?node-id=0-1&t=iVbs8ykbhbb9NaAK-1"
     },
     "type": "gallery",
     "gallery": [
       {
-        "image": "https://source.unsplash.com/400x300/?cosplay"
+        "image": "Asset/img/project7/Homepage.png"
       },
       {
-        "image": "https://source.unsplash.com/400x300/?form"
+        "image": "Asset/img/project7/Login.png"
       },
       {
-        "image": "https://source.unsplash.com/400x300/?login"
+        "image": "Asset/img/project7/Homepage Login.png"
       }
     ]
   },
@@ -121,20 +121,20 @@
     "description": "Homepage interface design for e-IANC website.",
     "detailedDescription": "Prototyped and documented homepage interface using Figma.",
     "technologies": ["Figma", "UI/UX", "Documentation"],
-    "icon": "fas fa-home",
+    "icon": "Asset/img/project8/e-ianc.png",
     "links": {
-      "figma": "https://dribbble.com/yourusername"
+      "figma": "https://www.figma.com/design/xqIUlMyqkqTVAuRb24CEYP/Project-Landing-Page-e-iANC?node-id=2-2&t=ucZEUoAu26lLcudA-1"
     },
     "type": "gallery",
     "gallery": [
       {
-        "image": "https://source.unsplash.com/400x300/?layout"
+        "image": "Asset/img/project8/beranda.png"
       },
       {
-        "image": "https://source.unsplash.com/400x300/?features"
+        "image": "Asset/img/project8/about.png"
       },
       {
-        "image": "https://source.unsplash.com/400x300/?documentation"
+        "image": "Asset/img/project8/faq.png"
       }
     ]
   }

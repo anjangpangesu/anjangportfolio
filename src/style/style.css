@@ -157,7 +157,7 @@ html {
 .gallery-image-container {
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%;
+  padding-bottom: 40%;
   /* 16:9 aspect ratio */
   position: relative;
   background-color: #f3f4f6;
@@ -172,10 +172,14 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex; /* Gunakan flexbox untuk menengahkan gambar */
-  align-items: center; /* Tengahkan vertikal */
-  justify-content: center; /* Tengahkan horizontal */
-  padding: 0; /* Hapus padding jika tidak ada teks */
+  display: flex;
+  /* Gunakan flexbox untuk menengahkan gambar */
+  align-items: center;
+  /* Tengahkan vertikal */
+  justify-content: center;
+  /* Tengahkan horizontal */
+  padding: 0;
+  /* Hapus padding jika tidak ada teks */
   text-align: center;
 }
 
@@ -183,16 +187,19 @@ html {
 .gallery-slide-image {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; /* Ensures the image fits within the container without cropping */
+  object-fit: contain;
+  /* Ensures the image fits within the container without cropping */
   /* Tambahkan margin-auto untuk menengahkan jika diperlukan oleh flexbox */
   margin: auto;
 }
 
 /* Styles for project icon image */
 .project-icon-image {
-  max-width: 80%; /* Adjust as needed */
-  max-height: 80%; /* Adjust as needed */
-  object-fit: contain; /* Ensures the image fits within the container */
+  max-width: 100%; /* Changed from 80% */
+  max-height: 100%; /* Changed from 80% */
+  object-fit: cover; /* Changed from contain to cover to fill the space */
+  width: 100%; /* Ensure it takes full width */
+  height: 100%; /* Ensure it takes full height */
 }
 
 
@@ -282,8 +289,8 @@ html {
   }
 
   .gallery-image-container {
-    padding-bottom: 60%;
-    /* Slightly taller for tablets */
+    padding-bottom: 50%;
+    /* Adjusted for tablets, slightly taller than default */
   }
 }
 
@@ -299,12 +306,13 @@ html {
   }
 
   .gallery-image-container {
-    padding-bottom: 75%;
-    /* 4:3 aspect ratio for tablets */
+    padding-bottom: 60%;
+    /* Adjusted for smaller tablets / landscape phones */
   }
 
   .gallery-image-content {
-    padding: 0; /* Hapus padding */
+    padding: 0;
+    /* Hapus padding */
   }
 
   /* Ensure pagination stays inside the container in landscape mode */
@@ -326,6 +334,59 @@ html {
 }
 
 @media (max-width: 640px) {
+  #hero .container {
+    padding-top: 6rem;
+    /* More padding at the top for small screens */
+    padding-bottom: 4rem;
+    /* More padding at the bottom */
+  }
+
+  #hero h1 {
+    font-size: 2.5rem;
+    /* Smaller H1 for mobile */
+  }
+
+  #hero h2 {
+    font-size: 1.8rem;
+    /* Smaller H2 for mobile */
+  }
+
+  #hero p {
+    font-size: 1.35rem;
+    /* Slightly smaller paragraph text */
+  }
+
+  #hero .md:w-1/2 {
+    width: 100%;
+    /* Ensure text section takes full width */
+  }
+
+  #hero .md:mb-0 {
+    margin-bottom: 2.5rem;
+    /* Add some margin below text section before image */
+  }
+
+  #hero .relative {
+    margin-top: 2rem;
+    /* Space above the image */
+  }
+
+  #hero .w-64,
+  #hero .h-64,
+  #hero .md:w-80,
+  #hero .md:h-80 {
+    width: 200px;
+    /* Make image circles slightly smaller */
+    height: 200px;
+    /* Make image circles slightly smaller */
+  }
+
+  #hero .absolute {
+    /* Adjust floating circles to scale with the main image */
+    -top: 4px;
+    -right: 4px;
+  }
+
   .gallery-nav-prev,
   .gallery-nav-next {
     width: 36px;
@@ -360,28 +421,121 @@ html {
   }
 
   .gallery-image-container {
-    padding-bottom: 100%;
-    /* Square aspect ratio for mobile */
+    padding-bottom: 80%;
+    /* Adjusted for mobile portrait, a bit more square */
   }
 
   .gallery-image-content {
-    padding: 0; /* Hapus padding */
+    padding: 0;
+    /* Hapus padding */
   }
 
   .gallery-image-content i {
-    display: none; /* Sembunyikan ikon sepenuhnya jika ada */
+    display: none;
+    /* Sembunyikan ikon sepenuhnya jika ada */
   }
 
   .gallery-image-content h3 {
-    display: none; /* Sembunyikan h3 sepenuhnya jika ada */
+    display: none;
+    /* Sembunyikan h3 sepenuhnya jika ada */
   }
 
   .gallery-image-content p {
-    display: none; /* Sembunyikan p sepenuhnya jika ada */
+    display: none;
+    /* Sembunyikan p sepenuhnya jika ada */
   }
 
   /* Ensure pagination stays inside the container in landscape mode */
   @media (orientation: landscape) {
+    #hero .container {
+      padding-top: 2rem;
+      /* Reduced top padding for landscape */
+      padding-bottom: 2rem;
+      /* Reduced bottom padding */
+      padding-left: 1.5rem;
+      /* Increased left padding */
+      padding-right: 1.5rem;
+      /* Increased right padding */
+      display: flex;
+      /* Use flexbox to better align content side-by-side */
+      flex-direction: row;
+      /* Arrange content in a row */
+      align-items: center;
+      /* Vertically align items */
+      justify-content: space-around;
+      /* Distribute space between items */
+    }
+
+    #hero .md:w-1/2 {
+      width: 48%;
+      /* Give roughly half width to text content */
+      margin-bottom: 0;
+      /* Remove bottom margin as content is now side-by-side */
+      text-align: left;
+      /* Ensure text aligns left */
+    }
+
+    #hero .md:w-1/2:last-child {
+      width: 48%;
+      /* Give roughly half width to image content */
+      margin-top: 0;
+      /* Remove top margin */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #hero h1 {
+      font-size: 2rem;
+      /* Further reduce H1 size for landscape to prevent wrapping */
+    }
+
+    #hero h2 {
+      font-size: 1.65rem;
+      /* Further reduce H2 size for landscape */
+    }
+
+    #hero p {
+      font-size: 1.3rem;
+      /* Further reduce paragraph size for landscape */
+      margin-bottom: 0.8rem;
+      /* Adjust paragraph bottom margin */
+    }
+
+    #hero .flex-wrap {
+      justify-content: flex-start;
+      /* Align buttons to the start */
+      gap: 0.75rem; /* Slightly reduce gap between buttons */
+    }
+
+    #hero .px-6 { /* Target buttons directly for smaller padding */
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    #hero .py-3 {
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+    }
+
+
+    #hero .w-64,
+    #hero .h-64,
+    #hero .md:w-80,
+    #hero .md:h-80 {
+      width: 140px;
+      /* Make image circles even smaller for landscape */
+      height: 140px;
+      /* Make image circles even smaller for landscape */
+    }
+
+    #hero .absolute {
+      /* Adjust floating circles to scale with the main image */
+      -top: 1px;
+      -right: 1px;
+      width: 140px; /* Adjust based on new image size */
+      height: 140px; /* Adjust based on new image size */
+    }
+
     .gallery-image-container {
       padding-bottom: 56.25%;
       /* 16:9 for landscape mobile */
@@ -405,6 +559,36 @@ html {
 
 /* Small mobile devices */
 @media (max-width: 375px) {
+  #hero h1 {
+    font-size: 2rem;
+    /* Even smaller H1 for very small screens */
+  }
+
+  #hero h2 {
+    font-size: 1.65rem;
+    /* Even smaller H2 for very small screens */
+  }
+
+  #hero p {
+    font-size: 1.3rem;
+    /* Even smaller paragraph text */
+  }
+
+  #hero .w-64,
+  #hero .h-64,
+  #hero .md:w-80,
+  #hero .md:h-80 {
+    width: 180px;
+    /* Make image circles even smaller */
+    height: 180px;
+    /* Make image circles even smaller */
+  }
+
+  #hero .flex-wrap > *:not(:last-child) {
+    margin-right: 0.5rem;
+    /* Reduce space between buttons if they wrap */
+  }
+
   .swiper-pagination-bullet {
     width: 6px !important;
     height: 6px !important;
@@ -427,7 +611,8 @@ html {
   }
 
   .gallery-image-content {
-    padding: 0; /* Hapus padding */
+    padding: 0;
+    /* Hapus padding */
   }
 
   .gallery-image-content i {
@@ -445,54 +630,95 @@ html {
 
 /* Existing animations */
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* New animations for About Me section */
 /* Existing animations */
 /* ... (keep your existing float, pulse-small, fade-in-out if you like them elsewhere) ... */
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* New animations for About Me section icons */
 .animate-float-icon-1 {
-    animation: float-small-alt 3.5s ease-in-out infinite;
+  animation: float-small-alt 3.5s ease-in-out infinite;
 }
+
 .animate-float-icon-2 {
-    animation: float-small-alt 3.8s ease-in-out infinite;
-    animation-delay: 0.5s; /* Stagger animation start */
+  animation: float-small-alt 3.8s ease-in-out infinite;
+  animation-delay: 0.5s;
+  /* Stagger animation start */
 }
+
 .animate-float-icon-3 {
-    animation: float-small-alt 3.2s ease-in-out infinite;
-    animation-delay: 1s; /* Stagger animation start */
+  animation: float-small-alt 3.2s ease-in-out infinite;
+  animation-delay: 1s;
+  /* Stagger animation start */
 }
+
 .animate-float-icon-4 {
-    animation: float-small-alt 3.6s ease-in-out infinite;
-    animation-delay: 0.7s; /* Stagger animation start */
+  animation: float-small-alt 3.6s ease-in-out infinite;
+  animation-delay: 0.7s;
+  /* Stagger animation start */
 }
 
 .bg-blur {
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .glassmorphism {
-    background-color: rgba(255, 255, 255, 0.3); /* Slightly transparent white */
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari support */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  background-color: rgba(255, 255, 255, 0.3);
+  /* Slightly transparent white */
+  backdrop-filter: blur(10px);
+  /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);
+  /* For Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Subtle white border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
 }
 
 @keyframes float-small-alt {
-    0% { transform: translateY(0px) rotate(0deg); }
-    25% { transform: translateY(-5px) rotate(2deg); }
-    50% { transform: translateY(0px) rotate(0deg); }
-    75% { transform: translateY(-5px) rotate(-2deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-5px) rotate(2deg);
+  }
+
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  75% {
+    transform: translateY(-5px) rotate(-2deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
 }
