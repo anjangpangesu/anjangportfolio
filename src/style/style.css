@@ -172,13 +172,29 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  display: flex; /* Gunakan flexbox untuk menengahkan gambar */
+  align-items: center; /* Tengahkan vertikal */
+  justify-content: center; /* Tengahkan horizontal */
+  padding: 0; /* Hapus padding jika tidak ada teks */
   text-align: center;
 }
+
+/* Styles for image within gallery */
+.gallery-slide-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensures the image fits within the container without cropping */
+  /* Tambahkan margin-auto untuk menengahkan jika diperlukan oleh flexbox */
+  margin: auto;
+}
+
+/* Styles for project icon image */
+.project-icon-image {
+  max-width: 80%; /* Adjust as needed */
+  max-height: 80%; /* Adjust as needed */
+  object-fit: contain; /* Ensures the image fits within the container */
+}
+
 
 /* Navbar active and hover styles */
 .nav-link {
@@ -288,7 +304,7 @@ html {
   }
 
   .gallery-image-content {
-    padding: 15px;
+    padding: 0; /* Hapus padding */
   }
 
   /* Ensure pagination stays inside the container in landscape mode */
@@ -349,19 +365,19 @@ html {
   }
 
   .gallery-image-content {
-    padding: 12px;
+    padding: 0; /* Hapus padding */
   }
 
   .gallery-image-content i {
-    font-size: 3rem !important;
+    display: none; /* Sembunyikan ikon sepenuhnya jika ada */
   }
 
   .gallery-image-content h3 {
-    font-size: 1.1rem !important;
+    display: none; /* Sembunyikan h3 sepenuhnya jika ada */
   }
 
   .gallery-image-content p {
-    font-size: 0.9rem !important;
+    display: none; /* Sembunyikan p sepenuhnya jika ada */
   }
 
   /* Ensure pagination stays inside the container in landscape mode */
@@ -411,21 +427,19 @@ html {
   }
 
   .gallery-image-content {
-    padding: 10px;
+    padding: 0; /* Hapus padding */
   }
 
   .gallery-image-content i {
-    font-size: 2.5rem !important;
-    margin-bottom: 8px !important;
+    display: none;
   }
 
   .gallery-image-content h3 {
-    font-size: 1rem !important;
-    margin-bottom: 4px !important;
+    display: none;
   }
 
   .gallery-image-content p {
-    font-size: 0.8rem !important;
+    display: none;
   }
 }
 

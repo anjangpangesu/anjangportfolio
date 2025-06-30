@@ -269,13 +269,16 @@ function populateProjects() {
 
                 let gallerySlides = "";
                 project.gallery.forEach((item) => {
+                    // Hanya sisakan tag img, hapus icon, title, dan description
+                    const imageHtml = item.image
+                        ? `<img src="${item.image}" alt="${item.title || 'Gallery Image'}" class="gallery-slide-image">`
+                        : ''; // Kosongkan jika tidak ada gambar
+
                     gallerySlides += `
                         <div class="swiper-slide">
                             <div class="gallery-image-container">
                                 <div class="gallery-image-content">
-                                    <i class="${item.icon} text-6xl text-gray-400 mb-4"></i>
-                                    <h3 class="text-xl font-bold">${item.title}</h3>
-                                    <p class="text-gray-600 mt-2">${item.description}</p>
+                                    ${imageHtml}
                                 </div>
                             </div>
                         </div>
@@ -310,10 +313,15 @@ function populateProjects() {
             }
         }
 
+        // Determine if project.icon is an image path/URL or a Font Awesome class
+        const projectIconHtml = project.icon.startsWith('http') || project.icon.startsWith('Asset/')
+            ? `<img src="${project.icon}" alt="Project Icon" class="project-icon-image">`
+            : `<i class="${project.icon} text-5xl text-gray-400"></i>`;
+
         projectElement.innerHTML = `
             <div class="relative">
                 <div class="h-60 bg-gray-200 flex items-center justify-center">
-                    <i class="${project.icon} text-5xl text-gray-400"></i>
+                    ${projectIconHtml}
                 </div>
                 <div class="project-overlay absolute inset-0 bg-primary bg-opacity-90 opacity-0 transition-opacity duration-300 flex flex-col items-center justify-center text-white p-6">
                     <h4 class="text-xl font-bold mb-2">${project.category}</h4>

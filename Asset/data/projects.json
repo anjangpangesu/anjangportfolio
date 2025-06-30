@@ -46,28 +46,19 @@
     "description": "Prototype design for CBT (Computer-Based Test) platform for teachers and students.",
     "detailedDescription": "Designed interfaces like homepage, login, dashboard, and more using Figma.",
     "technologies": ["Figma", "UI/UX", "Prototyping"],
-    "icon": "fas fa-pencil-ruler",
+    "icon": "Asset/img/project4/Dashboard - Student.png",
     "links": {
-      "figma": "https://dribbble.com/yourusername"
+      "figma": "https://www.figma.com/design/od476vifFEN1jBzBv7MItg/Web---Prana-CBT?node-id=0-1&t=C6Hle0Ha9yKmfQZF-1"
     },
     "type": "gallery",
     "gallery": [
       {
-        "icon": "fas fa-home",
-        "title": "Homepage Design",
-        "description": "Landing page with CTA for teachers and students",
-        "image": "https://source.unsplash.com/400x300/?website"
+        "image": "Asset/img/project4/Dashboard - Student.png"
       },
       {
-        "icon": "fas fa-user-lock",
-        "title": "Login Interface",
-        "description": "Secure login form design",
         "image": "https://source.unsplash.com/400x300/?login"
       },
       {
-        "icon": "fas fa-chalkboard-teacher",
-        "title": "Dashboard View",
-        "description": "Main interface for managing tests and viewing results",
         "image": "https://source.unsplash.com/400x300/?dashboard"
       }
     ]
@@ -113,21 +104,12 @@
     "type": "gallery",
     "gallery": [
       {
-        "icon": "fas fa-home",
-        "title": "Homepage",
-        "description": "Hero section with cosplay event highlights",
         "image": "https://source.unsplash.com/400x300/?cosplay"
       },
       {
-        "icon": "fas fa-user-plus",
-        "title": "Registration Page",
-        "description": "Sign-up page for new community members",
         "image": "https://source.unsplash.com/400x300/?form"
       },
       {
-        "icon": "fas fa-sign-in-alt",
-        "title": "Login Page",
-        "description": "Access page for existing members",
         "image": "https://source.unsplash.com/400x300/?login"
       }
     ]
@@ -146,21 +128,12 @@
     "type": "gallery",
     "gallery": [
       {
-        "icon": "fas fa-desktop",
-        "title": "Homepage Layout",
-        "description": "Hero layout and information sections",
         "image": "https://source.unsplash.com/400x300/?layout"
       },
       {
-        "icon": "fas fa-cogs",
-        "title": "Features Section",
-        "description": "Showcasing key features of e-IANC",
         "image": "https://source.unsplash.com/400x300/?features"
       },
       {
-        "icon": "fas fa-file-alt",
-        "title": "Design Documentation",
-        "description": "UX notes and explanation of UI decisions",
         "image": "https://source.unsplash.com/400x300/?documentation"
       }
     ]
