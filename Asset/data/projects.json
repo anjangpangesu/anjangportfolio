@@ -31,7 +31,7 @@
     "category": "IoT & Embedded System",
     "description": "Safe system that sends alerts via Telegram using ESP32-CAM.",
     "detailedDescription": "Includes backup battery power and remote notification functionality using Telegram bot integration.",
-    "technologies": ["ESP32-CAM", "Arduino", "Telegram API"],
+    "technologies": ["Arduino", "Fritzing", "Altium Designer", "ESP32-CAM", "Keypad", "Telegram API"],
     "icon": "Asset/img/project2&3/brankas-icon.png",
     "links": {
       "code": "https://github.com/anjangpangesu/Final-Thesis-IoT-Safe-with-Telegram-Alert",
@@ -69,7 +69,7 @@
     "category": "Web Application",
     "description": "Web platform for booking discussion rooms.",
     "detailedDescription": "Built architecture diagrams and used black box testing to validate system functions. Managed tasks via Notion.",
-    "technologies": ["Notion", "Black Box Testing", "HTML", "CSS", "JavaScript"],
+    "technologies": ["Notion", "Black Box Testing", "UML"],
     "icon": "Asset/img/project5/ruangan-icon.png",
     "links": {
       "live": "https://pinjamruangdiskusi.tech/"
@@ -82,7 +82,7 @@
     "category": "Web Application",
     "description": "Web-based e-commerce system for product catalog and checkout.",
     "detailedDescription": "Includes planning diagrams, class and sequence diagrams, and testing using black box methodology.",
-    "technologies": ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+    "technologies": ["Notion", "Black Box Testing", "UML"],
     "icon": "Asset/img/project6/ecommerce-icon.png",
     "links": {
       "live": "https://www.bintangutama.site/"
@@ -120,7 +120,7 @@
     "category": "UI/UX Design",
     "description": "Homepage interface design for e-IANC website.",
     "detailedDescription": "Prototyped and documented homepage interface using Figma.",
-    "technologies": ["Figma", "UI/UX", "Documentation"],
+    "technologies": ["Figma", "UI/UX", "Prototyping", "Documentation"],
     "icon": "Asset/img/project8/e-ianc.png",
     "links": {
       "figma": "https://www.figma.com/design/xqIUlMyqkqTVAuRb24CEYP/Project-Landing-Page-e-iANC?node-id=2-2&t=ucZEUoAu26lLcudA-1"
