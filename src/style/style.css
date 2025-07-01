@@ -338,9 +338,9 @@ html {
 
 @media (max-width: 640px) {
   #hero .container {
-    padding-top: 6rem;
+    padding-top: 1rem;
     /* More padding at the top for small screens */
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
     /* More padding at the bottom */
   }
 
@@ -378,16 +378,16 @@ html {
   #hero .h-64,
   #hero .md:w-80,
   #hero .md:h-80 {
-    width: 200px;
+    width: 180px;
     /* Make image circles slightly smaller */
-    height: 200px;
+    height: 180px;
     /* Make image circles slightly smaller */
   }
 
   #hero .absolute {
     /* Adjust floating circles to scale with the main image */
-    -top: 4px;
-    -right: 4px;
+    -top: 3px;
+    -right: 3px;
   }
 
   .gallery-nav-prev,
@@ -451,7 +451,7 @@ html {
   /* Ensure pagination stays inside the container in landscape mode */
   @media (orientation: landscape) {
     #hero .container {
-      padding-top: 2rem;
+      padding-top: 8rem;
       /* Reduced top padding for landscape */
       padding-bottom: 2rem;
       /* Reduced bottom padding */
