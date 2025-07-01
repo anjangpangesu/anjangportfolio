@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.text-justify-custom {
+  text-align: justify;
+}
+
 .bg-blur {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -201,7 +205,6 @@ html {
   width: 100%; /* Ensure it takes full width */
   height: 100%; /* Ensure it takes full height */
 }
-
 
 /* Navbar active and hover styles */
 .nav-link {
@@ -508,15 +511,15 @@ html {
       gap: 0.75rem; /* Slightly reduce gap between buttons */
     }
 
-    #hero .px-6 { /* Target buttons directly for smaller padding */
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
+    #hero .px-6 {
+      /* Target buttons directly for smaller padding */
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
     }
     #hero .py-3 {
-        padding-top: 0.6rem;
-        padding-bottom: 0.6rem;
+      padding-top: 0.6rem;
+      padding-bottom: 0.6rem;
     }
-
 
     #hero .w-64,
     #hero .h-64,
